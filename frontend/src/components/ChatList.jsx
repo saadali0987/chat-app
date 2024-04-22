@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import ChatItem from './ChatItem'
 import search from '../assets/search.png'
 import plus from "../assets/plus.png"
 import minus from "../assets/minus.png"
@@ -16,29 +17,12 @@ const ChatList = () => {
             <img className={`w-6 cursor-pointer ${addMode? "bg-red-500" : "bg-green-500"} rounded-md p-1`} src={addMode ? minus : plus} alt="" onClick={()=>setAddMode(prev=>!prev)} />
         </div>
 
-        <div className='flex items-center space-x-4 p-4 cursor-pointer border-b-2 border-gray-500'>
-            <img className='w-10 rounded-full object-cover' src={avatar} alt="" />
-            <div className='flex flex-col'>
-                <span>Saad Ali</span>
-                <p className='font-bold text-xs'>Hello Saad..</p>
-            </div>
-        </div>
+        
 
-        <div className='flex items-center space-x-4 p-4 cursor-pointer border-b-2 border-gray-500'>
-            <img className='w-10 rounded-full object-cover' src={avatar} alt="" />
-            <div className='flex flex-col'>
-                <span>Saad Ali</span>
-                <p className='font-bold text-xs'>Hello Saad..</p>
-            </div>
-        </div>
+        <ChatItem name="saad" text="hello dear" avatar={avatar} />
+        <ChatItem name="saad" text="hello dear" avatar={avatar} />
+        <ChatItem name="saad" text="hello dear" avatar={avatar} />
 
-        <div className='flex items-center space-x-4 p-4 cursor-pointer border-b-2 border-gray-500'>
-            <img className='w-10 rounded-full object-cover' src={avatar} alt="" />
-            <div className='flex flex-col'>
-                <span>Saad Ali</span>
-                <p className='font-bold text-xs'>Hello Saad..</p>
-            </div>
-        </div>
 
     
 

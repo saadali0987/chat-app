@@ -7,7 +7,7 @@ import Detail from './components/Detail'
 function App() {
 
   return (
-      <div className='bg-purple-300 text-black border w-[86vw] h-[86vh] rounded-md border-2 border-white flex'>
+      <div className='  text-black bg-gray-300 border w-[86vw] h-[86vh] rounded-md border-2 border-white flex'>
         <List />
         <Chat />
         <Detail />
